@@ -4,7 +4,7 @@ const TouchableMapBarStyle = StyleSheet.create({
     container: {
         flexDirection: "row",
         borderWidth: 2,
-        padding: 10,
+        padding: 8,
         marginRight: 20,
         marginLeft: 20,
         backgroundColor: "white",
@@ -12,7 +12,7 @@ const TouchableMapBarStyle = StyleSheet.create({
     },
 
     insideText: {
-        flex: 1,
+        flex: 0,
         color: "#909095",
         marginLeft: 5,
         fontSize: 16
@@ -34,7 +34,8 @@ const TouchableMapBarStyle = StyleSheet.create({
 
     barIcon: {
         flex: 1,
-        borderColor: "#EEEEEE"
+        borderColor: "#EEEEEE",
+        paddingRight: 8
     }
 });
 

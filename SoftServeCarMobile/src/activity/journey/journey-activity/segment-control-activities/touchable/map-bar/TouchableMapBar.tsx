@@ -28,7 +28,7 @@ function TouchableMapBar(props: any) {
                             { transform: [{ rotate: 0 + "deg" }] }
                         ]}
                         name={props?.iconName}
-                        size={20}
+                        size={25}
                         color={"black"}
                     />
                 </View>
