@@ -1,0 +1,18 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea/
+.vscode/
+.vs/
+build/
+.gradle/
+.DS_Store
+coverage/
+node_modules/
+local.properties
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
