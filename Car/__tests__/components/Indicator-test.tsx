@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import Indicator from "../../src/components/activity-indicator/Indicator";
 
 test("renders correctly", () =>
-  expect(renderer.create(<Indicator />).toJSON()).toMatchInlineSnapshot(`
+    expect(renderer.create(<Indicator />).toJSON()).toMatchInlineSnapshot(`
     <View
       style={
         Object {
@@ -22,12 +22,16 @@ test("renders correctly", () =>
       />
       <Text
         style={
-          Object {
-            "color": "#414045",
-            "fontFamily": "Proxima Nova",
-            "fontSize": 14,
-            "fontWeight": "700",
-          }
+          Array [
+            Object {
+              "fontFamily": "Proxima Nova",
+              "fontSize": 14,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#414045",
+            },
+          ]
         }
       >
         

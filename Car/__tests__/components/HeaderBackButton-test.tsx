@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import HeaderBackButton from "../../src/components/header-back-button/HeaderBackButton";
 
 test("renders correctly", () =>
-  expect(renderer.create(<HeaderBackButton />).toJSON()).toMatchInlineSnapshot(`
+    expect(renderer.create(<HeaderBackButton />).toJSON()).toMatchInlineSnapshot(`
     <View
       accessible={true}
       focusable={true}
@@ -52,12 +52,16 @@ test("renders correctly", () =>
       >
         <Text
           style={
-            Object {
-              "color": "#02A2CF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-            }
+            Array [
+              Object {
+                "fontFamily": "Open Sans",
+                "fontSize": 20,
+                "fontWeight": "700",
+              },
+              Object {
+                "color": "#02A2CF",
+              },
+            ]
           }
         >
           Back

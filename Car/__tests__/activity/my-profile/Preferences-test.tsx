@@ -4,17 +4,23 @@ import Preferences from "../../../src/activity/my-profile/my-profile-activity/pr
 
 const renderer = shallowRender.createRenderer();
 
+jest.mock("react-native-gesture-handler", () => require("react-native"));
+
 test("renders correctly", () =>
-  expect(renderer.render(<Preferences />)).toMatchInlineSnapshot(`
+    expect(renderer.render(<Preferences />)).toMatchInlineSnapshot(`
     <React.Fragment>
       <View
         style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#FFFFFF",
-            "flex": 1,
-            "justifyContent": "center",
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "white",
+            },
+          ]
         }
       >
         <Indicator

@@ -3,8 +3,8 @@ import renderer from "react-test-renderer";
 import TouchableNavigationBlock from "../../src/components/touchable-navigation-block/TouchableNavigationBlock";
 
 test("renders correctly", () =>
-  expect(renderer.create(<TouchableNavigationBlock />).toJSON())
-    .toMatchInlineSnapshot(`
+    expect(renderer.create(<TouchableNavigationBlock />).toJSON())
+        .toMatchInlineSnapshot(`
     <View>
       <View
         accessible={true}
@@ -43,14 +43,18 @@ test("renders correctly", () =>
             }
           }
           style={
-            Object {
-              "borderColor": "#FFFFFF",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 2,
-              "height": 160,
-              "marginVertical": 5,
-            }
+            Array [
+              Object {
+                "borderRadius": 8,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 160,
+                "marginVertical": 5,
+              },
+              Object {
+                "borderColor": "#FFFFFF",
+              },
+            ]
           }
         >
           <View

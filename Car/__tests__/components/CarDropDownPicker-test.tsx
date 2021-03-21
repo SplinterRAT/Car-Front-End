@@ -3,8 +3,8 @@ import renderer from "react-test-renderer";
 import CarDropDownPicker from "../../src/components/car-drop-down-picker/CarDropDownPicker";
 
 test("renders correctly", () =>
-  expect(renderer.create(<CarDropDownPicker />).toJSON())
-    .toMatchInlineSnapshot(`
+    expect(renderer.create(<CarDropDownPicker />).toJSON())
+        .toMatchInlineSnapshot(`
     <View>
       <View
         style={
@@ -35,10 +35,10 @@ test("renders correctly", () =>
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "#fff",
+              "backgroundColor": "white",
               "borderBottomLeftRadius": 0,
               "borderBottomRightRadius": 0,
-              "borderColor": "black",
+              "borderColor": "#dfdfdf",
               "borderTopLeftRadius": 0,
               "borderTopRightRadius": 0,
               "borderWidth": 2,
@@ -56,7 +56,6 @@ test("renders correctly", () =>
                 Object {},
                 Array [
                   Object {
-                    "color": "black",
                     "fontSize": 16,
                     "lineHeight": 24,
                     "paddingVertical": 10,
@@ -112,7 +111,7 @@ test("renders correctly", () =>
                 style={
                   Array [
                     Object {
-                      "color": undefined,
+                      "color": "black",
                       "fontSize": 14,
                     },
                     undefined,
@@ -153,12 +152,17 @@ test("renders correctly", () =>
                 "position": "absolute",
                 "width": "100%",
               },
-              Object {
-                "borderColor": "black",
-                "borderTopWidth": 0,
-                "borderWidth": 2,
-                "paddingHorizontal": 4,
-              },
+              Array [
+                Object {
+                  "borderTopWidth": 0,
+                  "borderWidth": 2,
+                  "paddingHorizontal": 4,
+                },
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "black",
+                },
+              ],
               Object {
                 "borderWidth": 0,
                 "display": "none",
@@ -188,17 +192,9 @@ test("renders correctly", () =>
               placeholderTextColor="gray"
               rejectResponderTermination={true}
               style={
-                Array [
-                  Object {
-                    "borderBottomWidth": 1,
-                    "borderColor": "#dfdfdf",
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "paddingHorizontal": 0,
-                    "paddingVertical": 8,
-                  },
-                  Object {},
-                ]
+                Object {
+                  "color": "black",
+                }
               }
               underlineColorAndroid="transparent"
             />
@@ -221,7 +217,13 @@ test("renders correctly", () =>
                   }
                 }
               >
-                <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "black",
+                    }
+                  }
+                >
                   Not Found
                 </Text>
               </View>

@@ -17,7 +17,6 @@ const MenuButtonStyle = StyleSheet.create({
         fontSize: 13,
         lineHeight: 42,
         fontWeight: "bold",
-        color: "black",
         alignItems: "center",
         paddingLeft: 24
     },

@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import MenuButton from "../../src/components/menu-button/MenuButton";
 
 test("renders correctly", () =>
-  expect(renderer.create(<MenuButton />).toJSON()).toMatchInlineSnapshot(`
+    expect(renderer.create(<MenuButton />).toJSON()).toMatchInlineSnapshot(`
     <View
       accessible={true}
       focusable={false}
@@ -49,11 +49,13 @@ test("renders correctly", () =>
                 Array [
                   Object {
                     "alignItems": "center",
-                    "color": "black",
                     "fontSize": 13,
                     "fontWeight": "bold",
                     "lineHeight": 42,
                     "paddingLeft": 24,
+                  },
+                  Object {
+                    "color": "black",
                   },
                   Object {
                     "color": "black",
