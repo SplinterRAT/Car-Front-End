@@ -5,7 +5,8 @@ on:
   push:
 
     branches: 
-      - 'images-fix' 
+      - develop
+      - images-fix 
 
   pull_request:
 
